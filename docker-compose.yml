@@ -1,0 +1,10 @@
+version: "3"
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: entity-sql-server
+    ports:
+      - "1434:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=T53wEMbsNXv7rSQZhuyaopAm4nwihk6ZR8WvqvKxL2aEKtfkdNTF3DhbymfryYa9frmm5XWmwuix3b6MgfHweJ5KNKi3ofKtrJJSNVf6fuKq4Bj3jCPjqAEQjAgdi3Qj
